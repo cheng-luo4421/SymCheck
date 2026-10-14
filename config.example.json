@@ -1,0 +1,17 @@
+{
+  "api_key": "<你的-API-Key>",
+  "base_url": "https://api.agnes-ai.cn/v1",
+  "model": "agnes-3.0-flash",
+  "model_options": [
+    "agnes-3.0-flash",
+    "agnes-2.5-pro",
+    "agnes-2.5-pro-alpha",
+    "agnes-2.5-pro-beta",
+    "agnes-2.5-flash",
+    "agnes-2.0-flash"
+  ],
+  "api": "openai-completions",
+  "timeout_s": 120,
+  "max_retries": 3,
+  "note": "base_url/model 依据 AGH 源码 packages/ai/src/adapters/pi/providers/agnes-ai.ts 确认(中国网关); 本文件已被 .gitignore 排除"
+}
