@@ -1,0 +1,107 @@
+[
+  {
+    "id": "calculus-01",
+    "category": "calculus",
+    "statement": "求不定积分 ∫sin(x)·cos(x) dx，x 为实数，答案包含任意常数 C。",
+    "model_answer": "$\\frac{1}{2}\\sin^2(x)+C$",
+    "asked_at": "2026-10-09 23:42:00"
+  },
+  {
+    "id": "calculus-02",
+    "category": "calculus",
+    "statement": "求不定积分 ∫x·eˣ dx，x 为实数，答案包含任意常数 C。",
+    "model_answer": "∫x·eˣ dx = (x - 1)eˣ + C",
+    "asked_at": "2026-10-09 23:42:01"
+  },
+  {
+    "id": "calculus-03",
+    "category": "calculus",
+    "statement": "求不定积分 ∫x²·ln(x) dx，定义域 x>0，答案包含任意常数 C。",
+    "model_answer": "$\\int x^2 \\ln(x) dx = \\frac{1}{3}x^3 \\ln(x) - \\frac{1}{9}x^3 + C$",
+    "asked_at": "2026-10-09 23:42:02"
+  },
+  {
+    "id": "calculus-04",
+    "category": "calculus",
+    "statement": "计算定积分 ∫₀¹ x·exp(x) dx。",
+    "model_answer": "\\([x e^x - e^x]_0^1 = (e - e) - (0 - 1) = 1\\)",
+    "asked_at": "2026-10-09 23:42:09"
+  },
+  {
+    "id": "calculus-05",
+    "category": "calculus",
+    "statement": "求双侧极限 lim(x→0) (exp(x)-1-x)/x²。",
+    "model_answer": "$$ \\lim_{x \\to 0} \\frac{e^x - 1 - x}{x^2} = \\frac{1}{2} $$",
+    "asked_at": "2026-10-09 23:42:10"
+  },
+  {
+    "id": "linear-algebra-01",
+    "category": "linear_algebra",
+    "statement": "解 2×2 线性方程组 2u+v=5，u-v=1；答案按 (u,v) 排列。",
+    "model_answer": "(2, 1)",
+    "asked_at": "2026-10-09 23:42:11"
+  },
+  {
+    "id": "linear-algebra-02",
+    "category": "linear_algebra",
+    "statement": "解 3×3 线性方程组 u+v+w=6，2u-v+w=3，u+2v-w=2；答案按 (u,v,w) 排列。",
+    "model_answer": "(u, v, w) = (2, 1, 3)",
+    "asked_at": "2026-10-09 23:42:12"
+  },
+  {
+    "id": "linear-algebra-03",
+    "category": "linear_algebra",
+    "statement": "求矩阵 A=[[2,1],[1,1]] 的逆矩阵。",
+    "model_answer": "$A^{-1} = \\frac{1}{2 \\times 1 - 1 \\times 1} \\begin{bmatrix} 1 & -1 \\\\ -1 & 2 \\end{bmatrix} = \\begin{bmatrix} 1 & -1 \\\\ -1 & 2 \\end{bmatrix}$",
+    "asked_at": "2026-10-09 23:42:14"
+  },
+  {
+    "id": "linear-algebra-04",
+    "category": "linear_algebra",
+    "statement": "求矩阵 A=[[2,1],[1,2]] 的全部特征值及对应特征向量。按特征值升序输出 (特征值,单位列向量)；参考向量首个非零分量为正，等价非零倍数也正确。",
+    "model_answer": "(√3, [-1/√6, 1/√6]ᵀ), (√3, [1/√6, 1/√6]ᵀ)",
+    "asked_at": "2026-10-09 23:42:15"
+  },
+  {
+    "id": "linear-algebra-05",
+    "category": "linear_algebra",
+    "statement": "计算矩阵 A=[[1,2,3],[0,1,4],[5,6,0]] 的行列式。",
+    "model_answer": "det(A) = 1(1·0 − 4·6) − 2(0·0 − 4·5) + 3(0·6 − 1·5) = 1(−24) − 2(−20) + 3(−5) = −24 + 40 − 15 = 1",
+    "asked_at": "2026-10-09 23:42:16"
+  },
+  {
+    "id": "ode-01",
+    "category": "ode",
+    "statement": "求一阶可分离变量方程 y'(t)=t·y(t) 的通解，包含零解。",
+    "model_answer": "y(t)=Ce^{t^2/2} (C为任意常数，当C=0时为零解)",
+    "asked_at": "2026-10-09 23:42:18"
+  },
+  {
+    "id": "ode-02",
+    "category": "ode",
+    "statement": "求一阶线性方程 y'(t)+2y(t)=t 的通解。",
+    "model_answer": "y(t) = Ce^{-2t} + \\frac{t}{2} - \\frac{1}{4}",
+    "asked_at": "2026-10-09 23:42:19"
+  },
+  {
+    "id": "ode-03",
+    "category": "ode",
+    "statement": "求二阶常系数齐次方程 y''(t)-3y'(t)+2y(t)=0 的通解。",
+    "model_answer": "y(t) = C_1 e^t + C_2 e^{2t}",
+    "asked_at": "2026-10-09 23:42:20"
+  },
+  {
+    "id": "ode-04",
+    "category": "ode",
+    "statement": "求二阶常系数非齐次方程 y''(t)+y(t)=t 的通解。",
+    "model_answer": "$y(t) = C_1\\cos t + C_2\\sin t + t$",
+    "asked_at": "2026-10-09 23:42:27"
+  },
+  {
+    "id": "ode-05",
+    "category": "ode",
+    "statement": "解初值问题 y''(t)+4y(t)=0，y(0)=1，y'(0)=0。",
+    "model_answer": "y(t) = \\cos(2t)",
+    "asked_at": "2026-10-09 23:42:30"
+  }
+]

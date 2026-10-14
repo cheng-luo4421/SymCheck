@@ -1,0 +1,41 @@
+# SymCheck 求解报告
+
+**题目**：用 RK4 数值求解初值问题 dy/dt = −2y + t，y(0) = 1，验证收敛阶。
+
+## 1. 符号解
+y(t) = t/2 − 1/4 + (5/4)·e^(−2t)
+
+## 2. 数值独立验证（SciPy）
+- **verdict**：PASS
+- **max_error**：1.1938894317609083e-11
+- threshold = 1e-06，error_type = absolute
+
+## 3. RK4 收敛阶验证
+四档步长 h = 0.1 / 0.05 / 0.025 / 0.0125，在 t_end = 1 处与解析解对比：
+
+| h | y_h(t=1) | 绝对误差 e(h) |
+|---|----------|--------------|
+| 0.1    | 0.419174435538 | 5.331e-06 |
+| 0.05   | 0.419169410527 | 3.065e-07 |
+| 0.025  | 0.419169122418 | 1.837e-08 |
+| 0.0125 | 0.419169105170 | 1.125e-09 |
+
+相邻误差比：≈ 17.40, 16.68, 16.34（趋近 16 = 2⁴）
+
+- **RK4 verdict**：PASS
+- **observed_order**：4.070
+- **min_error**：1.1245537279158668e-09（h = 0.0125）
+
+## 4. 总结
+- 符号解：y(t) = t/2 − 1/4 + 5·e^(−2t)/4
+- SciPy verdict：PASS，max_error = 1.19e-11
+- RK4 verdict：PASS，observed_order ≈ 4.07，min_error ≈ 1.12e-09
+- 重试次数：0
+- tool mcp_symcheck_c759c51d_sympy_solve_tool
+- tool mcp_symcheck_c759c51d_sympy_solve_tool · ok · 41ms
+- tool mcp_symcheck_c759c51d_scipy_verify_tool
+- tool mcp_symcheck_c759c51d_scipy_verify_tool · ok · 13ms
+- tool mcp_symcheck_c759c51d_rk4_convergence_tool
+- tool mcp_symcheck_c759c51d_rk4_convergence_tool · ok · 8ms
+- tool mcp_symcheck_c759c51d_rk4_convergence_tool
+- tool mcp_symcheck_c759c51d_rk4_convergence_tool · ok · 11ms

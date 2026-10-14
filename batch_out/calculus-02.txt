@@ -1,0 +1,15 @@
+# SymCheck 求解报告
+
+**题目**：求不定积分 ∫x·eˣ dx，x 为实数。
+
+- **符号解**：(x − 1)·eˣ + C
+- **验证方式**：SciPy 数值独立对照（绝对误差，threshold = 1e-08）
+- **verdict**：PASS
+- **max_error**：4.440892098500626e-16
+- **重试次数**：0（首次通过，无需策略切换）
+
+**结论**：∫x·eˣ dx = (x − 1)·eˣ + C，数值验证通过。
+- tool mcp_symcheck_c759c51d_sympy_solve_tool
+- tool mcp_symcheck_c759c51d_sympy_solve_tool · ok · 20ms
+- tool mcp_symcheck_c759c51d_scipy_verify_tool
+- tool mcp_symcheck_c759c51d_scipy_verify_tool · ok · 6ms

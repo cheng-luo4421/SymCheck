@@ -1,0 +1,17 @@
+# SymCheck 求解报告
+
+**题目**：求矩阵 A = [[2, 1], [1, 2]] 的全部特征值及对应特征向量。
+
+- **符号解**（按特征值升序，(特征值, 单位列向量)）：
+  - λ₁ = 1，v₁ = (−√2/2, √2/2)ᵀ
+  - λ₂ = 3，v₂ = (√2/2, √2/2)ᵀ
+- **验证方式**：SciPy 数值独立对照（特征对残差，绝对误差，threshold = 1e-08）
+- **verdict**：PASS
+- **max_error**：0.0
+- **重试次数**：0（首次通过，无需策略切换）
+
+**结论**：A 的特征值为 1 和 3，对应单位特征向量如上，数值验证通过。
+- tool mcp_symcheck_c759c51d_sympy_solve_tool
+- tool mcp_symcheck_c759c51d_sympy_solve_tool · ok · 6ms
+- tool mcp_symcheck_c759c51d_scipy_verify_tool
+- tool mcp_symcheck_c759c51d_scipy_verify_tool · ok · 6ms

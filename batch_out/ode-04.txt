@@ -1,0 +1,15 @@
+# SymCheck 求解报告
+
+**题目**：求二阶常系数非齐次方程 y″(t) + y(t) = t 的通解。
+
+- **符号解**：y(t) = C₁·sin(t) + C₂·cos(t) + t
+- **验证方式**：SciPy 数值独立对照（solve_ivp RK45，多组初值验证，绝对误差，threshold = 1e-06）
+- **verdict**：PASS
+- **max_error**：2.527522635631385e-11
+- **重试次数**：0（首次通过，无需策略切换）
+
+**结论**：方程通解为 y(t) = C₁·sin(t) + C₂·cos(t) + t，数值验证通过。
+- tool mcp_symcheck_c759c51d_sympy_solve_tool
+- tool mcp_symcheck_c759c51d_sympy_solve_tool · ok · 25ms
+- tool mcp_symcheck_c759c51d_scipy_verify_tool
+- tool mcp_symcheck_c759c51d_scipy_verify_tool · ok · 24ms

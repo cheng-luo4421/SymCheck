@@ -1,0 +1,16 @@
+# SymCheck 求解报告
+
+**题目**：求二阶常系数齐次方程 y″(t) − 3y′(t) + 2y(t) = 0 的通解。
+
+- **符号解**：y(t) = C₁·eᵗ + C₂·e^(2t)
+  （工具返回形式 (C1 + C2·eᵗ)·eᵗ，等价）
+- **验证方式**：SciPy 数值独立对照（solve_ivp RK45，多组初值验证，绝对误差，threshold = 1e-06）
+- **verdict**：PASS
+- **max_error**：4.422815891302889e-09
+- **重试次数**：0（首次通过，无需策略切换）
+
+**结论**：方程通解为 y(t) = C₁·eᵗ + C₂·e^(2t)，数值验证通过。
+- tool mcp_symcheck_c759c51d_sympy_solve_tool
+- tool mcp_symcheck_c759c51d_sympy_solve_tool · ok · 49ms
+- tool mcp_symcheck_c759c51d_scipy_verify_tool
+- tool mcp_symcheck_c759c51d_scipy_verify_tool · ok · 35ms

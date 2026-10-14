@@ -1,0 +1,15 @@
+# SymCheck 求解报告
+
+**题目**：计算定积分 ∫₀¹ x·eˣ dx。
+
+- **符号解**：1
+- **验证方式**：SciPy 数值独立对照（定积分 [0,1]，绝对误差，threshold = 1e-08）
+- **verdict**：PASS
+- **max_error**：0.0
+- **重试次数**：0（首次通过，无需策略切换）
+
+**结论**：∫₀¹ x·eˣ dx = 1，数值验证通过。
+- tool mcp_symcheck_c759c51d_sympy_solve_tool
+- tool mcp_symcheck_c759c51d_sympy_solve_tool · ok · 26ms
+- tool mcp_symcheck_c759c51d_scipy_verify_tool
+- tool mcp_symcheck_c759c51d_scipy_verify_tool · ok · 6ms

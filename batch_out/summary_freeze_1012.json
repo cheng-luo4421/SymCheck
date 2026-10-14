@@ -1,0 +1,150 @@
+{
+  "generated_at": "2026-10-12 22:25:48",
+  "rows": [
+    {
+      "id": "calculus-01",
+      "category": "calculus",
+      "rc": 0,
+      "grade": "PASS",
+      "run_id": "run-20261012-221920-fd85",
+      "retries": 0,
+      "has_report": true
+    },
+    {
+      "id": "calculus-02",
+      "category": "calculus",
+      "rc": 0,
+      "grade": "PASS",
+      "run_id": "run-20261012-221951-6a03",
+      "retries": 0,
+      "has_report": true
+    },
+    {
+      "id": "calculus-03",
+      "category": "calculus",
+      "rc": 0,
+      "grade": "PASS",
+      "run_id": "run-20261012-222019-2951",
+      "retries": 0,
+      "has_report": true
+    },
+    {
+      "id": "calculus-04",
+      "category": "calculus",
+      "rc": 0,
+      "grade": "PASS",
+      "run_id": "run-20261012-222028-f008",
+      "retries": 0,
+      "has_report": true
+    },
+    {
+      "id": "calculus-05",
+      "category": "calculus",
+      "rc": 0,
+      "grade": "PASS",
+      "run_id": "run-20261012-222053-cadf",
+      "retries": 0,
+      "has_report": true
+    },
+    {
+      "id": "linear-algebra-01",
+      "category": "linear_algebra",
+      "rc": 0,
+      "grade": "PASS",
+      "run_id": "run-20261012-222114-a8dd",
+      "retries": 0,
+      "has_report": true
+    },
+    {
+      "id": "linear-algebra-02",
+      "category": "linear_algebra",
+      "rc": 0,
+      "grade": "PASS",
+      "run_id": "run-20261012-222128-6662",
+      "retries": 0,
+      "has_report": true
+    },
+    {
+      "id": "linear-algebra-03",
+      "category": "linear_algebra",
+      "rc": 0,
+      "grade": "PASS",
+      "run_id": "run-20261012-222208-5cd1",
+      "retries": 0,
+      "has_report": true
+    },
+    {
+      "id": "linear-algebra-04",
+      "category": "linear_algebra",
+      "rc": 0,
+      "grade": "PASS",
+      "run_id": "run-20261012-222221-8bce",
+      "retries": 0,
+      "has_report": true
+    },
+    {
+      "id": "linear-algebra-05",
+      "category": "linear_algebra",
+      "rc": 0,
+      "grade": "PASS",
+      "run_id": "run-20261012-222247-5ee9",
+      "retries": 0,
+      "has_report": true
+    },
+    {
+      "id": "ode-01",
+      "category": "ode",
+      "rc": 0,
+      "grade": "PASS",
+      "run_id": "run-20261012-222304-876d",
+      "retries": 0,
+      "has_report": true
+    },
+    {
+      "id": "ode-02",
+      "category": "ode",
+      "rc": 0,
+      "grade": "PASS",
+      "run_id": "run-20261012-222315-28f7",
+      "retries": 0,
+      "has_report": true
+    },
+    {
+      "id": "ode-03",
+      "category": "ode",
+      "rc": 0,
+      "grade": "PASS",
+      "run_id": "run-20261012-222340-d9fb",
+      "retries": 0,
+      "has_report": true
+    },
+    {
+      "id": "ode-04",
+      "category": "ode",
+      "rc": 0,
+      "grade": "PASS",
+      "run_id": "run-20261012-222356-e211",
+      "retries": 0,
+      "has_report": true
+    },
+    {
+      "id": "ode-05",
+      "category": "ode",
+      "rc": 0,
+      "grade": "PASS",
+      "run_id": "run-20261012-222410-9dee",
+      "retries": 0,
+      "has_report": true
+    },
+    {
+      "id": "rk4-bonus",
+      "category": "ode",
+      "rc": 0,
+      "grade": "PASS",
+      "run_id": "run-20261012-222430-4b42",
+      "retries": 0,
+      "has_report": true
+    }
+  ],
+  "passed": 16
+}
