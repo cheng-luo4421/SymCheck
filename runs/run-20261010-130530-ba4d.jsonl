@@ -1,0 +1,2 @@
+{"ts": "2026-10-10T13:05:30.829", "run_id": "run-20261010-130530-ba4d", "event": "run_start", "name": "mcp-math-tools", "note": "本文件由程序自动生成, 为 AGH 执行证据"}
+{"ts": "2026-10-10T13:05:30.831", "run_id": "run-20261010-130530-ba4d", "event": "tool_call", "tool": "rk4_convergence", "args": {"ics": {"x0": 0, "y0": 1}}, "result": {"status": "failed", "verdict": "MANUAL", "error": "ValueError: 仅支持一阶 ODE, 高阶请先化为一阶方程组", "method": "rk4", "t_end": 1.0, "duration_ms": 1.5}, "status": "ok", "duration_ms": 2.5}
